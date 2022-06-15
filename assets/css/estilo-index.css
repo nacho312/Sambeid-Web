@@ -76,7 +76,7 @@
     
     
     
-    background: url("fondo.jpg") no-repeat;
+    background: url("../img/banner/fondo.jpg") no-repeat;
     height: 100vh;
     background-size: cover;
     background-position: center;

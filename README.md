@@ -10,4 +10,4 @@ Integrantes:
 Tecnologías Usadas:
 -HTML
 -CSS
--BOOTSTRAP
+-JS
