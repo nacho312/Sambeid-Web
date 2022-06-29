@@ -20,6 +20,17 @@
 ::selection{
     background: rgb(0,123,255,0.3);
 }
+.ola{
+    text-align:center;
+    font-size: 40px;
+    font-family: Verdana, sans-serif;
+}
+.alo{
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+
+}
 .content{
     max-width: 1250px;
     margin: auto;
@@ -190,18 +201,6 @@
   .navbar.show .menu-list li a{
     margin-left: 0px;
   }
-  .banner{
-    height: 70vh;
-  }
-  .banner-grande{
-    font-size: 100px;
-  }
-  .banner-chico{
-    width: 150px;
-    font-size: 50px;
-    bottom: 50px;
-    left: 50px;
-  }
 }
 @media (max-width: 380px) {
   .navbar .logo a{
@@ -308,11 +307,13 @@ body{
 .container{
     position: relative;
     width: 100%;
-    border-radius: 6px;
-    padding: 30px;
+    height: auto;
+    border-radius: 1px;
+    padding: 40px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
+
 .container header{
     position: relative;
     font-size: 20px;
@@ -364,23 +365,16 @@ form.secActive .form.first{
     margin: 6px 0;
     color: #333;
 }
-.container form .fields{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-form .fields .input-field{
-    display: flex;
-    width: calc(100% / 3 - 15px);
-    flex-direction: column;
-    margin: 4px 0;
-}
+
+
+
 .input-field label{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     color: #2e2e2e;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
 .input-field input, select{
     outline: none;
     font-size: 14px;
@@ -476,17 +470,14 @@ form .buttons button , .backBtn{
     display: none;
     border: 1px #dadada solid;
 }
-#checkboxes2{
-    display: none;
-    border: 1px #dadada solid;
-}
 #checkboxes label{
-    display: flexbox;
+    display: block;
 }
 #checkboxes label:hover{
     background-color: #1e90ff;
 }
 .slide {
+    border-radius: 20px;
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
@@ -505,6 +496,7 @@ form .buttons button , .backBtn{
 }
 
 .slide-item {
+    border-radius: 20px;
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
@@ -512,6 +504,7 @@ form .buttons button , .backBtn{
 }
 
 .slide-item img {
+    border-radius: 20px;
     display: block;
     height: auto;
     max-width: 100%;
@@ -589,8 +582,7 @@ form .buttons button , .backBtn{
      li:nth-child(1) .slide-circulo,
 #slide-2:checked ~ .control-2 ~ .slide-indicador 
       li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
     color: #428bca;
 }
 
@@ -607,14 +599,225 @@ form .buttons button , .backBtn{
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
          -1px 0px 2px rgba(255, 255, 255, 0);
 }
-.ola{
-    text-align:center;
-    font-size: 40px;
-    font-family: Verdana, sans-serif;
+
+ /* ----------------------------------------------- formulario nombre y personas-----------------------------------------------*/
+ .container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.alo{
-    text-align: center;
-    font-size: 25px;
-    font-family: monospace;
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+ /* ----------------------------------------------- formulario nombre y personas-----------------------------------------------*/
+
+/* ----------------------------------------------- formulario Ingredientes --------------------------------------------------- */
+.letra{  
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+form .ingredientes{
+
+    padding-top: 20px;
+    column-count: 3;
+    column-gap: 150px;
+    column-rule: 1px solid #d6d8ff;
+}
+form .ingredientes .sepa{
+    margin: 10px;
+}
+.ingredientes input[type="checkbox"]
+{
+display: none;
+}
+.ingredientes label{
+    color:#ca50ac;
+   /* background: rgba(0, 0, 0, .1); */
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+.ingredientes label:hover{
+    background: rgba(11, 224, 231, 0.2); 
+}
+
+.ingredientes label:before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #1aa4ad93; /* circulo */
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+.ingredientes input[type="checkbox"]:checked + label{
+    padding: 5px 15px;
+    background:#cf46f1;
+    border-radius: 2px;
+    color: #fff;
+    
+    }
+    .ingredientes input[type="checkbox"]:checked + label:before{
+        display: none;
+    }
+    /* ----------------------------------------------- formulario topping-----------------------------------------------*/
+    .tooltip {
+        font-weight: normal;
+        color:black;
+        text-decoration: none;
+        position: relative;
+}
+.tooltip:hover .tooltip-box {
+    display: inline-block;
+}
+
+.tooltip-box{
+    display:none;
+    background-color: rgba(11, 224, 231, 0.2);;
+    line-height: 5px;
+    z-index: 1;
+    text-align:  flex;
+    color: #cf46f1;
+    font-size: 15px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    left: 40;
+    top: 80x;
+}
+form .toppingybox{
+
+    padding-top: 20px;
+    column-count: 2;
+    column-gap: 150px;
+    column-rule: 1px solid #d6d8ff;
 
 }
+
+form .toppingybox .topping{
+    padding: 10px 10px 10px  45px;
+
+   }
+form .toppingybox .mensaje{
+ padding: 10px 10px 10px 10px;
+ 
+}
+textarea{
+    resize: none;
+}
+/* ----------------------------------------------- formulario Ingredientes2-----------------------------------------------*/
+form .ingredientes2{
+
+    padding-top: 20px;
+    column-count: 3;
+    column-gap: 150px;
+    column-rule: 0px solid;
+}
+form .ingredientes2 .extra{
+    margin: 10px;
+}
+.ingredientes2 input[type="checkbox"]
+{
+display: none;
+}
+.ingredientes2 label{
+    color:#ca50ac;
+   /* background: rgba(0, 0, 0, .1); */
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+.ingredientes2 label:hover{
+    background: rgba(11, 224, 231, 0.2);
+}
+
+.ingredientes2 label:before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #1aa4ad93; /* circulo */
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+.ingredientes2 input[type="checkbox"]:checked + label{
+    padding: 5px 15px;
+    background:#cf46f1;
+    border-radius: 2px;
+    color: #fff;
+    
+    }
+    .ingredientes2 input[type="checkbox"]:checked + label:before{
+        display: none;
+    }
+/* ----------------------------------------------- formulario Enviar-----------------------------------------------*/
+form .boxenviar{
+    padding: 10px 10px 0px 450px;
+
+}
+
+
+form .boxenviar button
+{
+    background-color: #d6d8ff;
+display: none;
+}
+form .boxenviar button{
+    color:#ca50ac;
+   /* background: rgba(0, 0, 0, .1); */
+
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+form .boxenviar button:hover{
+    background: rgba(11, 224, 231, 0.2);
+}
+
+form .boxenviar button:before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: none;
+
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+form .boxenviar button:checked + button{
+    padding: 5px 15px;
+    background:#cf46f1;
+    border-radius: 2px;
+    color: #fff;
+    
+    }
+    .boxenviar button:checked + button:before{
+        display: none;
+    }

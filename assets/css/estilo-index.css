@@ -388,3 +388,8 @@ input[type=radio]:checked {
     }
 }
 
+.contenidoNosotros{
+    background: url("../img/banner/divFondo.jpg");
+    height: 380px;
+    opacity: 0.8;
+}

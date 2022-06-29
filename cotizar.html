@@ -1,203 +1,252 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="assets/css/estilo-mas.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Joan&display=swap" rel="stylesheet"> 
-</head>
-<body>
-<!--------------------------------------- Encabezado ------------------------------------------------->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo-mas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Joan&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--------------------------------------- Encabezado ------------------------------------------------->
     <nav class="navbar">
-    <div class="content">
-      <div>
-        <a href="index.html"><img class="logo" src="assets/img/logo/logo-header.png"></a>
+      <div class="content">
+        <div>
+          <a href="index.html">
+            <img class="logo" src="assets/img/logo/logo-header.png">
+          </a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="active" href="cotizar.html">Cotizar</a>
+          </li>
+          <li>
+            <a href="nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
-      <ul class="menu-list">
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
+    </nav>
+    <!------------------------------------------ contenido ----------------------------------------->
+    <div class="banner">
+    <div class="about">
+      <div class="content">
+        <h1 class="ola">Cotiza con nosotros</h1>
+        <h1 class="alo">¡Date el gusto que estabas buscando!</h1>
+        <div class="slide">
+          <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+              <img src="assets/img/Tortas/1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+              <img src="assets/img/Tortas/2.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+              <img src="assets/img/Tortas/3.jpg">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+              <li>
+                <label for="slide-1" class="slide-circulo">•</label>
+              </li>
+              <li>
+                <label for="slide-2" class="slide-circulo">•</label>
+              </li>
+              <li>
+                <label for="slide-3" class="slide-circulo">•</label>
+              </li>
+            </ol>
+          </div>
         </div>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a class="active" href="cotizar.html">Cotizar</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
+        <br>
+        <br>
+        <div class="container">
+          <h2 class="alo">Rellene el formulario</h2>
+          <br>
+          <form>
+            <div class="fields">
+              <div class="input-field">
+                <label>Nombre y Apellido</label>
+                <input type="text" placeholder="Ingrese el Nombre y Apellido" id="nombreyapellido">
+              </div>
+              <div class="input-field">
+                <label>Cantidad de personas</label>
+                <select id="cantidadp">
+                  <option selected disabled>Seleccione la cantidad de personas </option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="45">45</option>
+                  <option value="50">50</option>
+                  <option value="60">60</option>
+                </select>
+              </div>
+            </div>
+            <br>
+            <label class="letra">Personalize su torta con 3 ingredientes a elección:</label>
+            <br>
+            <br>
+            <div class="ingredientes">
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio1" value="Coreo">
+              <label for="cradio1">Crema de Oreo</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio2" value="Cchocolate">
+              <label for="cradio2">Crema de Chocolate</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio3" value="Clucuma">
+              <label for="cradio3">Crema de Lucúma</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio4" value="Cfrutilla">
+              <label for="cradio4">Crema de Frutilla</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio5" value="Cmaracuya">
+              <label for="cradio5">Crema de Maraculla</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio6" value="Durazno">
+              <label for="cradio6">Durazno</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio7" value="Gchocolate">
+              <label for="cradio7">Ganache de Chocolate</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio8" value="Manjar">
+              <label for="cradio8">Chocolate</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio9" value="Mframbuesa">
+              <label for="cradio9">Mermelada de Frambuesa</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio10" value="Mfrutilla">
+              <label for="cradio10">Mermelada de Frutilla</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio11" value="Nueces">
+              <label for="cradio11">Nueces</label>
+              <br>
+              <input class="sepa" name="Columna1" type="checkbox" id="cradio12" value="Piña">
+              <label for="cradio12">Piña</label>
+              <br>
+            </div>
+            <div>
+              <br>
+              <br>
+              <a class="tooltip">
+                <label>¿Topping?</label>
+                <i class="fas fa-info-circle"></i>
+                <label style="padding: 0px 0px 40px 530px;">Consultas:</label>
+                <span class="tooltip-box"> Son extras que funcionan como acompañamientos para la torta con un precio adicional</span>
+            </a>
+                <br>
+                <br>
+            </div>
+            <div class="toppingybox">
+              <div class="topping">
+                <textarea type="text" id="cremauno" name="name" required cols="55" rows="10" placeholder="Escribe aqui!"></textarea>
+              </div>
+              <div class="mensaje">
+                <textarea type="text" id="mensaje" name="name" required cols="55" rows="10" placeholder="¿Necesitas agregar algo más?"></textarea>
+              </div>
+            </div>
+            <br>
+            <label class="letra">Agrega mas ingredientes por solo un beso</label>
+            <br>
+            <br>
+            <div class="ingredientes2">
+              <input class="extra" name="Columna2" type="checkbox" id="cradio13" value="Coreo">
+              <label for="cradio13">Crema de Oreo</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio14" value="Cchocolate">
+              <label for="cradio14">Crema de Chocolate</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio15" value="Clucuma">
+              <label for="cradio15">Crema de Lucúma</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio16" value="Cfrutilla">
+              <label for="cradio16">Crema de Frutilla</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio17" value="Cmaracuya">
+              <label for="cradio17">Crema de Maraculla</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio18" value="Durazno">
+              <label for="cradio18">Durazno</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio19" value="Gchocolate">
+              <label for="cradio19">Ganache de Chocolate</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio20" value="Manjar">
+              <label for="cradio20">Chocolate</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio21" value="Mframbuesa">
+              <label for="cradio21">Mermelada de Frambuesa</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio22" value="Mfrutilla">
+              <label for="cradio22">Mermelada de Frutilla</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio23" value="Nueces">
+              <label for="cradio23">Nueces</label>
+              <br>
+              <input class="extra" name="Columna2" type="checkbox" id="cradio24" value="Piña">
+              <label for="cradio24">Piña</label>
+              <br>
+            </div>
+            <br>
+            <br>
+            <div class="boxenviar">
+              <button id="send">Enviar</button>
+            </div>
+          </form>
+            </div>
+        </div>
       </div>
     </div>
-  </nav>
-
-
-  <!------------------------------------------ contenido -------------------------------------------->
-  <div class="about">
-    <div class="content">
-      <div class="title">Menu Resposivo</div>
-      <div class="container">
-        <header>Registration</header>
-
-        <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Nombre completo</label>
-                            <input type="text" placeholder="Ingresa nombre completo" id="nombreCompleto">
-                        </div>
-
-                        <div class="input-field">
-                            <label>Porciones</label>
-                            <select id="porciones" multiple>
-                                <option selected disabled>Ingresa porciones
-                                </option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                                <option value="25">25</option>
-                                <option value="30">30</option>
-                                <option value="40">40</option>
-                                <option value="45">45</option>
-                                <option value="50">50</option>
-                                <option value="60">60</option>
-                            </select> 
-                        </div>
-
-                        <div class="input-field">
-                            <label>Cantidad de bizcochos</label>
-                            <select id="cantidadBizcochos">
-                                <option disabled selected>Ingresa la cantidad de bizcochos</option>
-                                <option value="1">1
-                                </option>
-                                <option value="2">2
-                                </option>
-                                <option value="3">3
-                                </option>
-                            </select>
-                        </div>
-
-                        <div class="input-field">
-                            <div class="multiSelect">
-                                <div class="selectBox" onclick="showCheckboxes()">
-                                <select>
-                                    <option>Selecciona los sabores de bizcohos</option>
-                                </select>
-                                <div class="overSelect"></div>
-                            </div>
-                            <div id="checkboxes">
-                                <label for="cremaOreo"><input type="checkbox" id="cremaOreo">Crema de oreo</label>
-                                <label for="cremaChocolate"><input type="checkbox" id="cremaChocolate">Crema de chocolate</label>
-                                <label for="cremaLucuma"><input type="checkbox" id="cremaLucuma">Crema de lucúma</label>
-                                <label for="cremaFrutilla"><input type="checkbox" id="cremaFrutilla">Crema de frutilla</label>
-                                <label for="cremaMaracuya"><input type="checkbox" id="cremaMaracuya">Crema de maracuya</label>
-                                <label for="manjar"><input type="checkbox" id="manjar">Manjar</label>
-                                <label for="piña"><input type="checkbox" id="piña">Piña</label>
-                                <label for="nueces"><input type="checkbox" id="nueces">Nueces</label>
-                                <label for="durazno"><input type="checkbox" id="durazno">Durazno</label>
-                                <label for="ganacheChocolate"><input type="checkbox" id="ganacheChocolate">Ganache de chocolate</label>
-                                <label for="mermeladaFrambuesa"><input type="checkbox" id="mermeladaFrambuesa">Mermelada de frambuesa</label>
-                                <label for="mermeladaFrutilla"><input type="checkbox" id="mermeladaFrutilla">Mermelada de frutilla</label>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Gender</label>
-                            <select >
-                                <option disabled selected>Select gender</option>
-                                <option>inpu</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Occupation</label>
-                            <input type="text" placeholder="Enter your ccupation" >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="details ID">
-                    <span class="title">Identity Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>ID Type</label>
-                            <input type="text" placeholder="Enter ID type" >
-                        </div>
-
-                        <div class="input-field">
-                            <label>ID Number</label>
-                            <input type="number" placeholder="Enter ID number" >
-                        </div>
-
-                        <div class="input-field">
-                            <label>Issued Authority</label>
-                            <input type="text" placeholder="Enter issued authority" >
-                        </div>
-
-                        <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" >
-                        </div>
-
-                        <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date">
-                        </div>
-
-                        <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date">
-                        </div>
-                    </div>
-
-                    <button class="nextBtn">
-                        <span class="btnText">Next</span>
-                        <i class="uil uil-navigator"></i>
-                    </button>
-                </div> 
-            </div>
-        </form>
     </div>
-    </div>
-  </div>
-  <script src="assets/js/main.js"></script>
-  
-  
-
-  <!-- pie de pagina -->
-
-  <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="#">Sambeid</a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>El emprendimiento tortas "Sambeid" fue fundada en el año 2006 por Silvana Moya, es una pyme familiar que se dedica a la producción de tortas personalizadas. Al fabricar nuestros productos pensamos en el diseño y calidad.</p>
-            </div>
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/tortascaseras.pasteleriaadomicilio" class="fab fa-facebook" target="_blank"></a>
-                    <a href="https://www.instagram.com/tortas_sambeid/" class="fab fa-instagram" target="_blank"></a>
-                    <a href="" class="fab fa-whatsapp" target="_blank"></a>
-                </div>
-            </div>
+    <script src="assets/js/main.js"></script>
+    <!-- pie de pagina -->
+    <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">Sambeid</a>
+          </figure>
         </div>
-        <div class="grupo-2">
-            <small>&copy; 2022 <b>Sambeid</b> - Todos los Derechos Reservados.</small>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>El emprendimiento tortas "Sambeid" fue fundada en el año 2006 por Silvana Moya, es una pyme familiar que se dedica a la producción de tortas personalizadas. Al fabricar nuestros productos pensamos en el diseño y calidad.</p>
         </div>
-    </footer> 
-  
-</body>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="https://www.facebook.com/tortascaseras.pasteleriaadomicilio" class="fab fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/tortas_sambeid/" class="fab fa-instagram" target="_blank"></a>
+            <a href="" class="fab fa-whatsapp" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2022 <b>Sambeid</b> - Todos los Derechos Reservados. </small>
+      </div>
+    </footer>
+  </body>
 </html>
