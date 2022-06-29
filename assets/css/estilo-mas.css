@@ -312,6 +312,8 @@ body{
     padding: 40px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.4)
 }
 
 .container header{
@@ -336,6 +338,7 @@ body{
     min-height: 490px;
     background-color: #fff;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0);
 }
 .container form .form{
     position: absolute;
