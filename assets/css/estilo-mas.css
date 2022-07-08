@@ -824,3 +824,47 @@ form .boxenviar button:checked + button{
     .boxenviar button:checked + button:before{
         display: none;
     }
+/*            ---------------------------NOSOTROS -----------------------------------------*/
+#texto1
+{
+	font: oblique bold 120% cursive;
+	text-align: justify;
+	padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+#texto2
+{
+	font: oblique bold 120% cursive;
+	text-align:center;
+}
+.row{
+	text-align:center;
+}
+
+.column {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6%;
+	justify-content: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Historia
+{
+	width: 45%;
+}
+.img-log{
+	max-width: 30%;
+	justify-items: center;
+	display: grid;
+}
+
