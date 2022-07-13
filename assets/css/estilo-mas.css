@@ -5,7 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  /*font-family: 'Sofia', sans-serif;*/
+    /*font-family: 'Sofia', sans-serif;*/
+}
+html{
+    scroll-behavior: smooth;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -23,12 +26,15 @@
 .ola{
     text-align:center;
     font-size: 40px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    color: #a72573;
 }
 .alo{
     text-align: center;
     font-size: 25px;
-    font-family: monospace;
+    font-family: 'Playfair Display SC', serif;
+    color: #01bbc1ff;
+    margin-bottom: 10px;
 
 }
 .content{
@@ -121,7 +127,6 @@
     width: 300px;
 
 }
-
 .about{
     padding-top: 200px;
     padding-bottom: 30px;
@@ -129,9 +134,11 @@
 .about .title{
     font-size: 38px;
     font-weight: 700;
+    margin-top: 20px;
 }
 .about p{
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
     text-align: justify;
 }
 .icon{
@@ -225,7 +232,7 @@ footer{
     max-width: 1200px;
     margin: auto;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap:50px;
     padding: 45px 0px;
 }
@@ -246,13 +253,22 @@ footer{
     width: 250px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color: #fff;
+    color: #a72573;
     margin-bottom: 15px;
     font-size: 20px;
+    text-align: center;
 }
 .pie-pagina .grupo-1 .box p{
-    color: #fff;
+    color: #a72573;
     margin-bottom: 10px;
+    font-size: 17px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+.pie-pagina .grupo-1 .red-social{
+    display: flex;
+    justify-content: center;
 }
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
@@ -260,12 +276,14 @@ footer{
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
+    color: #a72573;
     background-color: #d6d8ff;
     text-align: center;
     transition: all 300ms ease;
     font-size: 20px;
+}
+#boxultimo{
+    padding-right: 10px;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: #ba2d65;
@@ -285,6 +303,9 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         grid-gap:0px;
         padding: 10px 0px;
+    }
+    .pie-pagina .grupo-1 .box p{
+        font-size: 15px;
     }
 }
 
@@ -372,10 +393,11 @@ form.secActive .form.first{
 
 
 .input-field label{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
-    color: #2e2e2e;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #a72573;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
 }
 
 .input-field input, select{
@@ -482,15 +504,18 @@ form .buttons button , .backBtn{
 .slide {
     border-radius: 20px;
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .slide-inner {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
+    width: 70%;    
 }
 
 .slide-open:checked + .slide-item {
@@ -571,14 +596,14 @@ form .buttons button , .backBtn{
 }
 
 .slide-circulo {
-    color: #828282;
+    color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
 .slide-circulo:hover {
-    color: #aaaaaa;
+    color: #a72573;
 }
 
 #slide-1:checked ~ .control-1 ~ .slide-indicador 
@@ -586,7 +611,7 @@ form .buttons button , .backBtn{
 #slide-2:checked ~ .control-2 ~ .slide-indicador 
       li:nth-child(2) .slide-circulo,
 #slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
-    color: #428bca;
+    color: #a72573;
 }
 
 #titulo {
@@ -602,29 +627,36 @@ form .buttons button , .backBtn{
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
          -1px 0px 2px rgba(255, 255, 255, 0);
 }
-
+@media(max-width: 700px)
+{
+    .slide{
+        display: none;
+    }
+}
  /* ----------------------------------------------- formulario nombre y personas-----------------------------------------------*/
  .container form .fields{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 form .fields .input-field{
     display: flex;
-    width: calc(100% / 2 - 15px);
+    width: 100%;
     flex-direction: column;
     margin: 4px 0;
+    margin-right: 10px;
 }
  /* ----------------------------------------------- formulario nombre y personas-----------------------------------------------*/
 
 /* ----------------------------------------------- formulario Ingredientes --------------------------------------------------- */
 .letra{  
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    color: #a72573;
+    font-weight: bold;
+    font-size: 15px;
 }
 form .ingredientes{
-
-    padding-top: 20px;
     column-count: 3;
     column-gap: 150px;
     column-rule: 1px solid #d6d8ff;
@@ -672,9 +704,24 @@ transition: all 0.3s ease;
     color: #fff;
     
     }
-    .ingredientes input[type="checkbox"]:checked + label:before{
+.ingredientes input[type="checkbox"]:checked + label:before{
         display: none;
     }
+@media(max-width: 850px){
+    form .ingredientes{
+        column-count: 2;
+    }
+    .container form .fields{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media(max-width: 615px){
+    form .ingredientes{
+        column-count: 1;
+    }
+}
     /* ----------------------------------------------- formulario topping-----------------------------------------------*/
     .tooltip {
         font-weight: normal;
@@ -700,32 +747,36 @@ transition: all 0.3s ease;
     top: 80x;
 }
 form .toppingybox{
-
-    padding-top: 20px;
-    column-count: 2;
-    column-gap: 150px;
-    column-rule: 1px solid #d6d8ff;
-
+    margin-top: 50px;
+    display : flex;
+    flex-direction : row ;
+    justify-content : space-around;
+    flex-flow : wrap;
 }
 
 form .toppingybox .topping{
-    padding: 10px 10px 10px  45px;
-
-   }
-form .toppingybox .mensaje{
- padding: 10px 10px 10px 10px;
- 
+    box-sizing:     border-box  ;
+    width:  45%;
 }
+
 textarea{
-    resize: none;
+    width: 100%; 
+    resize: none; 
+    padding: 10px;
+}
+@media (max-width  :850px){
+    form .toppingybox   {
+        flex-direction:     column  ;
+    }
+    form .toppingybox   .topping    {
+        width:  100%;
+    }
 }
 /* ----------------------------------------------- formulario Ingredientes2-----------------------------------------------*/
 form .ingredientes2{
-
-    padding-top: 20px;
     column-count: 3;
     column-gap: 150px;
-    column-rule: 0px solid;
+    column-rule: 1px solid #d6d8ff;
 }
 form .ingredientes2 .extra{
     margin: 10px;
@@ -773,17 +824,34 @@ transition: all 0.3s ease;
     .ingredientes2 input[type="checkbox"]:checked + label:before{
         display: none;
     }
+@media(max-width: 850px){
+    form .ingredientes2{
+        column-count: 2;
+    }
+    .container form .fields{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media(max-width: 615px){
+    form .ingredientes2{
+        column-count: 1;
+    }
+}
 /* ----------------------------------------------- formulario Enviar-----------------------------------------------*/
 form .boxenviar{
-    padding: 10px 10px 0px 450px;
-
+    /*padding: 10px 10px 0px 450px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 form .boxenviar button
 {
     background-color: #d6d8ff;
-display: none;
+    display: none;
 }
 form .boxenviar button{
     color:#ca50ac;
@@ -792,7 +860,7 @@ form .boxenviar button{
     display: inline-block;
     position: relative;
     font-size: 1em;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
 -webkit-transition: all 0.3s ease;
 -o-transition: all 0.3s ease;
@@ -824,3 +892,182 @@ form .boxenviar button:checked + button{
     .boxenviar button:checked + button:before{
         display: none;
     }
+#rc-imageselect, .g-recaptcha {
+display: inline; /*the most important*/
+}
+ 
+#rc-imageselect{
+max-width: 100%;
+}
+ 
+.g-recaptcha>div>div{
+width: 100% !important;
+height: 78px;
+transform:scale(1); /*the code to rescale the captcha obtained in this page*/
+webkit-transform:scale(1);
+text-align: center;
+position: relative;
+}
+
+@media(max-width: 470px){
+    .g-recaptcha>div>div{
+        transform:scale(0.77); /*the code to rescale the captcha obtained in this page*/
+        webkit-transform:scale(0.77);
+    }
+}
+/* --------------------- NOSOTROS -----------------*/
+.img-logo{
+    width: 35%;
+}
+.textos
+{
+    font: oblique 120% cursive;
+    text-align: justify;
+    /*padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;*/
+}
+#texto2
+{
+    font: oblique 120% cursive;
+    text-align:center;
+}
+.row{
+    text-align:center;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6%;
+    justify-content: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Historia
+{
+    max-width: 90%;
+    width: 45%;
+}
+.img-text{
+    max-width: 40%;
+    
+}
+.carta {
+    box-sizing: border-box;
+    border-width: 5px;
+    border: solid transparent 10px;
+    /*min-width: 35vw;*/
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 1px;
+    border-radius: 20px;
+}
+.img-log
+{
+    width: 40%;
+}
+@media (max-width: 1350px){
+    .carta{
+        max-width: 90%;
+    }
+}
+@media (max-width: 868px) {
+ 
+  /* --------Carta-------*/
+  .content{
+    width: 90%;
+  }
+  .textos
+  {
+    padding: 0 0.1px;
+    font-size: 15px;
+  }
+  .carta{
+    max-width:90%;
+  }
+  .img-logo{
+    display: none;
+  }
+  .Historia{
+    display: contents;
+  } 
+  .about .title{
+    margin-top: 10px;
+}
+
+}
+@media (max-width: 380px) {
+
+  .textos
+  {
+    padding: 0 0.1px;
+    font-size: 15px;
+  }
+  .carta{
+    max-width:90%;
+  }
+  .img-logo
+  {
+    display: none;  
+  }
+  .Historia{
+    display: contents;
+  }
+  .content
+  {
+        width: 100%;
+        padding: 10px;
+      
+  }
+  .img-log{
+    width: 100%;
+  }
+
+.about .title{
+    margin-top: 10px;
+}
+
+}
+@media (max-width: 550px) {
+
+    .carta{
+        max-width:90%;
+    }
+    .img-logo
+    {
+        display: none;  
+    }
+    .Historia{
+        display: contents;
+    }
+    .img-log{
+    width: 100%;
+  }
+  .about .title{
+    margin-top: 10px;
+}
+
+    
+}
+.topping label{
+    color: #a72573;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Playfair Display SC', serif;
+    cursor: pointer;
+}
+.topping i{
+    color: red;
+    cursor: pointer;
+}

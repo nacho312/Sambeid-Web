@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="assets/css/estilo-mas.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Joan&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!--------------------------------------- Encabezado ------------------------------------------------->
-    <nav class="navbar">
-      <div class="content">
-        <div>
-          <a href="index.html">
-            <img class="logo" src="assets/img/logo/logo-header.png">
-          </a>
-        </div>
-        <ul class="menu-list">
-          <div class="icon cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="active" href="cotizar.html">Cotizar</a>
-          </li>
-          <li>
-            <a href="nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-        <div class="icon menu-btn">
-          <i class="fas fa-bars"></i>
-        </div>
+<head>
+
+  <link rel="icon" href="assets/img/logo/logo-header.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>Cotizar - Sambeid</title>  
+  <link rel="stylesheet" type="text/css" href="assets/css/estilo-mas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Joan&display=swap" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/c61404fdb8.js" crossorigin="anonymous"></script>
+    <script src="assets/js/validartres.js"></script>
+    </head>
+<body>
+    
+<!--------------------------------------- Encabezado ------------------------------------------------->
+<nav class="navbar">
+    <div class="content">
+      <div>
+        <a href="index.html"><img class="logo" src="assets/img/logo/logo-header.png"></a>
       </div>
-    </nav>
-    <!------------------------------------------ contenido ----------------------------------------->
-    <div class="banner">
-    <div class="about">
-      <div class="content">
-        <h1 class="ola">Cotiza con nosotros</h1>
-        <h1 class="alo">¡Date el gusto que estabas buscando!</h1>
-        <div class="slide">
-          <div class="slide-inner">
-            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="cotizar.html">Cotizar</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="#pie">Contacto</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+   
+
+
+  <!------------------------------------------ contenido -------------------------------------------->
+  <div class="about">
+    <div class="content">
+        
+        <h1 class="ola" >Cotiza con nosotros</h1>
+        <h1 class="alo" >¡Date el gusto que estabas buscando!</h1>
+
+      <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
             <div class="slide-item">
-              <img src="assets/img/Tortas/1.jpg">
+                <img src="assets/img/fotos/cotizar1.jpeg">
             </div>
-            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
             <div class="slide-item">
-              <img src="assets/img/Tortas/2.jpg">
+                <img src="assets/img/fotos/cotizar2.jpeg">
             </div>
-            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
             <div class="slide-item">
-              <img src="assets/img/Tortas/3.jpg">
+                <img src="assets/img/fotos/cotizar3.jpeg">
             </div>
             <label for="slide-3" class="slide-control prev control-1">‹</label>
             <label for="slide-2" class="slide-control next control-1">›</label>
@@ -69,184 +77,182 @@
             <label for="slide-2" class="slide-control prev control-3">‹</label>
             <label for="slide-1" class="slide-control next control-3">›</label>
             <ol class="slide-indicador">
-              <li>
-                <label for="slide-1" class="slide-circulo">•</label>
-              </li>
-              <li>
-                <label for="slide-2" class="slide-circulo">•</label>
-              </li>
-              <li>
-                <label for="slide-3" class="slide-circulo">•</label>
-              </li>
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
             </ol>
-          </div>
         </div>
-        <br>
-        <br>
-        <div class="container">
-          <h2 class="alo">Rellene el formulario</h2>
-          <br>
-          <form>
-            <div class="fields">
-              <div class="input-field">
-                <label>Nombre y Apellido</label>
-                <input type="text" placeholder="Ingrese el Nombre y Apellido" id="nombreyapellido">
-              </div>
-              <div class="input-field">
-                <label>Cantidad de personas</label>
-                <select id="cantidadp">
-                  <option selected disabled>Seleccione la cantidad de personas </option>
-                  <option value="15">15</option>
-                  <option value="20">20</option>
-                  <option value="25">25</option>
-                  <option value="30">30</option>
-                  <option value="40">40</option>
-                  <option value="45">45</option>
-                  <option value="50">50</option>
-                  <option value="60">60</option>
-                </select>
-              </div>
-            </div>
-            <br>
-            <label class="letra">Personalize su torta con 3 ingredientes a elección:</label>
-            <br>
-            <br>
-            <div class="ingredientes">
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio1" value="Coreo">
-              <label for="cradio1">Crema de Oreo</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio2" value="Cchocolate">
-              <label for="cradio2">Crema de Chocolate</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio3" value="Clucuma">
-              <label for="cradio3">Crema de Lucúma</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio4" value="Cfrutilla">
-              <label for="cradio4">Crema de Frutilla</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio5" value="Cmaracuya">
-              <label for="cradio5">Crema de Maraculla</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio6" value="Durazno">
-              <label for="cradio6">Durazno</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio7" value="Gchocolate">
-              <label for="cradio7">Ganache de Chocolate</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio8" value="Manjar">
-              <label for="cradio8">Chocolate</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio9" value="Mframbuesa">
-              <label for="cradio9">Mermelada de Frambuesa</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio10" value="Mfrutilla">
-              <label for="cradio10">Mermelada de Frutilla</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio11" value="Nueces">
-              <label for="cradio11">Nueces</label>
-              <br>
-              <input class="sepa" name="Columna1" type="checkbox" id="cradio12" value="Piña">
-              <label for="cradio12">Piña</label>
-              <br>
-            </div>
-            <div>
-              <br>
-              <br>
-              <a class="tooltip">
-                <label>¿Topping?</label>
-                <i class="fas fa-info-circle"></i>
-                <label style="padding: 0px 0px 40px 530px;">Consultas:</label>
-                <span class="tooltip-box"> Son extras que funcionan como acompañamientos para la torta con un precio adicional</span>
-            </a>
-                <br>
-                <br>
-            </div>
-            <div class="toppingybox">
-              <div class="topping">
-                <textarea type="text" id="cremauno" name="name" required cols="55" rows="10" placeholder="Escribe aqui!"></textarea>
-              </div>
-              <div class="mensaje">
-                <textarea type="text" id="mensaje" name="name" required cols="55" rows="10" placeholder="¿Necesitas agregar algo más?"></textarea>
-              </div>
-            </div>
-            <br>
-            <label class="letra">Agrega mas ingredientes por solo un beso</label>
-            <br>
-            <br>
-            <div class="ingredientes2">
-              <input class="extra" name="Columna2" type="checkbox" id="cradio13" value="Coreo">
-              <label for="cradio13">Crema de Oreo</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio14" value="Cchocolate">
-              <label for="cradio14">Crema de Chocolate</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio15" value="Clucuma">
-              <label for="cradio15">Crema de Lucúma</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio16" value="Cfrutilla">
-              <label for="cradio16">Crema de Frutilla</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio17" value="Cmaracuya">
-              <label for="cradio17">Crema de Maraculla</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio18" value="Durazno">
-              <label for="cradio18">Durazno</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio19" value="Gchocolate">
-              <label for="cradio19">Ganache de Chocolate</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio20" value="Manjar">
-              <label for="cradio20">Chocolate</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio21" value="Mframbuesa">
-              <label for="cradio21">Mermelada de Frambuesa</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio22" value="Mfrutilla">
-              <label for="cradio22">Mermelada de Frutilla</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio23" value="Nueces">
-              <label for="cradio23">Nueces</label>
-              <br>
-              <input class="extra" name="Columna2" type="checkbox" id="cradio24" value="Piña">
-              <label for="cradio24">Piña</label>
-              <br>
-            </div>
-            <br>
-            <br>
-            <div class="boxenviar">
-              <button id="send">Enviar</button>
-            </div>
-          </form>
-            </div>
-        </div>
-      </div>
     </div>
+
+  
+
+      <div class="container" >
+        <h2 class="alo">RELLENE EL FORMULARIO</h2>
+    <br>
+        <form>
+
+                    <div class="fields" >
+                        <div class="input-field" >
+                            <label>Nombre y Apellido</label>
+                            <input type="text" onkeypress="return soloLetras(event)" placeholder="Ingrese el Nombre y Apellido" id="nombreyapellido" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Cantidad de personas</label>
+                            <select id="cantidadp">
+                                <option selected disabled>Seleccione la cantidad de personas
+                                </option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                            </select>
+                        </div>
+                    </div>
+
+                       <br>
+                    <div>
+                            
+                        <br><br>
+                       
+                        <label class="letra">Personalice su torta con 3 ingredientes:</label>
+                            <br><br>
+                        </div>
+                      
+                  
+                   
+                       <div class="ingredientes" >
+                          
+                        <input class="sepa" name="Columna1" type="checkbox" id="cradio1" value="Crema de oreo">
+                        <label for="cradio1">Crema de Oreo</label><br>
+                        <input class="sepa" name="Columna1"   type="checkbox"  id="cradio2" value="Crema de chocolate">
+                        <label for="cradio2">Crema de Chocolate</label><br>
+                        <input class="sepa" name="Columna1"   type="checkbox"  id="cradio3" value="Crema de lucuma">
+                        <label for="cradio3">Crema de Lucúma</label><br>
+                        <input class="sepa" name="Columna1"    type="checkbox"  id="cradio4" value="Crema de frutilla">
+                        <label for="cradio4">Crema de Frutilla</label><br>
+                        <input class="sepa" name="Columna1"   type="checkbox"  id="cradio5" value="Crema de maracuya">
+                        <label for="cradio5">Crema de Maracuya</label><br>
+                        <input class="sepa" name="Columna1"    type="checkbox"  id="cradio6" value="Durazno">
+                        <label for="cradio6">Durazno</label><br>
+                        <input class="sepa" name="Columna1"    type="checkbox"  id="cradio7" value="Ganache de chocolate">
+                        <label for="cradio7">Ganache de Chocolate</label><br>
+                        <input class="sepa" name="Columna1"    type="checkbox"  id="cradio8" value="Chocolate">
+                        <label for="cradio8">Chocolate</label><br>
+                        <input class="sepa" name="Columna1"    type="checkbox"  id="cradio9" value="Mermelada de frambuesa">
+                        <label for="cradio9">Mermelada de Frambuesa</label><br>
+                        <input class="sepa" name="Columna1"   type="checkbox"  id="cradio10" value="Mermelada de frutilla">
+                        <label for="cradio10">Mermelada de Frutilla</label><br>
+                        <input class="sepa" name="Columna1"    type="checkbox"  id="cradio11" value="Nueces">
+                        <label for="cradio11">Nueces</label><br>
+                        <input class="sepa" name="Columna1"   type="checkbox" id="cradio12" value="Piña">
+                        <label for="cradio12">Piña</label> <br>
+                    
+                        </div>
+            
+                            
+                        <div class="toppingybox">
+                      
+                            <div class="topping">
+                                <a class="tooltip"></a>
+                                <label onclick="return Ver()">¿Topping?</label>
+                                <i class="fa-solid fa-circle-info" onclick="return Ver()"></i>
+                                <textarea  type="text" id="toppingid" name="toppi" 
+                                cols="55" rows="10" placeholder="Escribe aqui los topping que deseas!"></textarea>
+                            </div>
+                            <div class="topping">
+                                <label>Consultas:</label>
+                                <textarea type="text" id="mensaje" name="name"
+                                cols="55" rows="10"placeholder="¿Necesitas agregar algo más?"></textarea>
+                            </div>
+                        </div>
+
+
+                        <br>
+                       <label class="letra">Agrega más ingredientes por un valor adicional:</label><br><br>
+                       <div class="ingredientes2">
+
+                        <input class="extra" name="Columna2" type="checkbox" id="cradio13" value="Crema de oreo">
+                        <label for="cradio13">Crema de Oreo</label><br>
+                        <input class="extra" name="Columna2"   type="checkbox"  id="cradio14" value="Crema de chocolate">
+                        <label for="cradio14">Crema de Chocolate</label><br>
+                        <input class="extra" name="Columna2"   type="checkbox"  id="cradio15" value="Crema de lucuma">
+                        <label for="cradio15">Crema de Lucúma</label><br>
+                        <input class="extra" name="Columna2"    type="checkbox"  id="cradio16" value="Crema de frutilla">
+                        <label for="cradio16">Crema de Frutilla</label><br>
+                        <input class="extra" name="Columna2"   type="checkbox"  id="cradio17" value="Crema de maracuya">
+                        <label for="cradio17">Crema de Maracuya</label><br>
+                        <input class="extra" name="Columna2"    type="checkbox"  id="cradio18" value="Durazno">
+                        <label for="cradio18">Durazno</label><br>
+                        <input class="extra" name="Columna2"    type="checkbox"  id="cradio19" value="Ganache de chocolate">
+                        <label for="cradio19">Ganache de Chocolate</label><br>
+                        <input class="extra" name="Columna2"    type="checkbox"  id="cradio20" value="chocolate">
+                        <label for="cradio20">Chocolate</label><br>
+                        <input class="extra" name="Columna2"    type="checkbox"  id="cradio21" value="Mermelada de frambuesa">
+                        <label for="cradio21">Mermelada de Frambuesa</label><br>
+                        <input class="extra" name="Columna2"   type="checkbox"  id="cradio22" value="Mermelada de frutilla">
+                        <label for="cradio22">Mermelada de Frutilla</label><br>
+                        <input class="extra" name="Columna2"    type="checkbox"  id="cradio23" value="Nueces">
+                        <label for="cradio23">Nueces</label><br>
+                        <input class="extra" name="Columna2"   type="checkbox" id="cradio24" value="Piña">
+                        <label for="cradio24">Piña</label> <br>
+                    </div>
+                    <br><br>
+                    <div class="boxenviar">
+                        <div class="g-recaptcha" id="captcha" data-sitekey="6Lf6_NcgAAAAAI7CcB3b62JGFg6IM2LievvyfBpi"></div>
+                        <button onclick="return getValue()">Enviar</button>
+                    </div>
+        </form>
+       
+    </div>
+ 
+  </div>
+  
 </div>
-    <script src="assets/js/main.js"></script>
-    <!-- pie de pagina -->
-    <footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-          <figure>
-            <a href="#">Sambeid</a>
-          </figure>
+
+</div>
+
+  <!---------------------------------------- pie de pagina -------------------------------------------------->
+
+  <footer class="pie-pagina" id="pie">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">Sambeid</a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>El emprendimiento tortas "Sambeid" fue fundada en el año 2006 por Silvana Moya, es una pyme familiar que se dedica a la producción de tortas personalizadas. Al fabricar nuestros productos pensamos en el diseño y calidad.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/tortascaseras.pasteleriaadomicilio" class="fab fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/tortas_sambeid/" class="fab fa-instagram" target="_blank"></a>
+                    <a href="https://wa.me/56998315624" class="fab fa-whatsapp" target="_blank"></a>
+                </div>
+            </div>
+            <div class="box" id="boxultimo">
+                <h2>ENCUENTRANOS</h2>
+                <p>Padres Carmelitos #13, Estación Central</p>
+            </div>
         </div>
-        <div class="box">
-          <h2>SOBRE NOSOTROS</h2>
-          <p>El emprendimiento tortas "Sambeid" fue fundada en el año 2006 por Silvana Moya, es una pyme familiar que se dedica a la producción de tortas personalizadas. Al fabricar nuestros productos pensamos en el diseño y calidad.</p>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Sambeid</b> - Todos los Derechos Reservados.</small>
         </div>
-        <div class="box">
-          <h2>SIGUENOS</h2>
-          <div class="red-social">
-            <a href="https://www.facebook.com/tortascaseras.pasteleriaadomicilio" class="fab fa-facebook" target="_blank"></a>
-            <a href="https://www.instagram.com/tortas_sambeid/" class="fab fa-instagram" target="_blank"></a>
-            <a href="" class="fab fa-whatsapp" target="_blank"></a>
-          </div>
-        </div>
-      </div>
-      <div class="grupo-2">
-        <small>&copy; 2022 <b>Sambeid</b> - Todos los Derechos Reservados. </small>
-      </div>
-    </footer>
-  </body>
+    </footer> 
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
