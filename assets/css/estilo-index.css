@@ -479,8 +479,8 @@ input[type=radio]:checked {
   flex-direction: column;
   position: relative;
   font-size: 1.3rem;
-  background: url("../img/banner/divFondo.jpg");
-  background-size: 1000px;
+  background: url("../img/banner/divfondito.png");
+  background-size: cover;
 
 }
 
@@ -514,9 +514,6 @@ input[type=radio]:checked {
   .hero__title{
     font-size: 2rem;
     width: 100%;
-  }
-  .hero{
-    background-size: 1100px;
   }
 }
 @-webkit-keyframes untransform {
