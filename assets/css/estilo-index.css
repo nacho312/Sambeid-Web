@@ -37,7 +37,7 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    background: #d6d8ff;
+    background: #c69cd0;
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -126,7 +126,7 @@ html{
     text-align: justify;
 }
 .icon{
-    color: #c69cd0;
+    color: #a72573;
     font-size: 20px;
     cursor: pointer;
     display: none;
@@ -221,7 +221,7 @@ footer{
 }
 .pie-pagina{
     width: 100%;
-    background-color: #d6d8ff;
+    background-color: #c69cd0;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -249,13 +249,14 @@ footer{
     width: 250px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color: #a72573;
-    margin-bottom: 15px;
+    color: #fff;
+    margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
+    margin-top: 10px;
 }
 .pie-pagina .grupo-1 .box p{
-    color: #a72573;
+    color: #fff;
     margin-bottom: 10px;
     font-size: 17px;
     text-align: justify;
@@ -272,16 +273,18 @@ footer{
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #a72573;
-    background-color: #d6d8ff;
+    color: #fff;
+    background-color: #c69cd0;
     text-align: center;
     transition: all 300ms ease;
     font-size: 20px;
 }
+#boxultimo{
+    padding-right: 10px;
+}
 .pie-pagina .grupo-1 .red-social a:hover{
     color: #ba2d65;
 }
-#a72573
 .pie-pagina .grupo-2{
     background-color: #a72573;
     padding: 15px 10px;
@@ -446,13 +449,8 @@ input[type=radio]:checked {
 
 }
 
-
-.boxenviar button
-{
-    background-color: #d6d8ff;
-
-}
 .boxenviar button{
+  background-color: #d6d8ff;
     color:#ca50ac;
    /* background: rgba(0, 0, 0, .1); */
 
@@ -464,10 +462,74 @@ input[type=radio]:checked {
   border-style: none;
   width: 200px;
   height: 45px;
+  font-size: 18px;
 }
 .boxenviar button:hover{
     background: rgba(11, 224, 231, 0.2);
 }
 
 
+.hero {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  height: 60vh;
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  font-size: 1.3rem;
+  background: url("../img/banner/divFondo.jpg");
+  background-size: 1000px;
+
+}
+
+.hero__title {
+  margin-bottom: 15px;
+  font-size: 3.75rem;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 1.4;
+  width: 50%;
+}
+.hero__title span {
+  display: inline-block;
+  transform: rotate(30deg) translateY(2em);
+  transform-origin: 0 100%;
+  -webkit-animation: untransform normal 1 1.25s 0.3125s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: untransform normal 1 1.25s 0.3125s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+.hero__copy {
+  margin-bottom: 20px;
+  max-width: 50ch;
+  transform: translatey(2em);
+  opacity: 0;
+  -webkit-animation: untransform normal 1 1.25s 0.9375s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: untransform normal 1 1.25s 0.9375s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+
+
+@media(max-width: 1000px){
+  .hero__title{
+    font-size: 2rem;
+    width: 100%;
+  }
+  .hero{
+    background-size: 1100px;
+  }
+}
+@-webkit-keyframes untransform {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes untransform {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 

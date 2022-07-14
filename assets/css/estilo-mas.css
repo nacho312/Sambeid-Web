@@ -50,7 +50,7 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    background: #d6d8ff;
+    background: #c69cd0;
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -135,14 +135,20 @@ html{
     font-size: 38px;
     font-weight: 700;
     margin-top: 20px;
+    font-family: 'Playfair Display SC', serif;
+    color: #b761a2;
+
 }
 .about p{
     padding-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
+    font-family: 'Playfair Display', serif;
+    color: #46b9bc;
+    font-size: 20px;
 }
 .icon{
-    color: #c69cd0;
+    color: #a72573;
     font-size: 20px;
     cursor: pointer;
     display: none;
@@ -225,7 +231,7 @@ footer{
 }
 .pie-pagina{
     width: 100%;
-    background-color: #d6d8ff;
+    background-color: #c69cd0;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -253,13 +259,14 @@ footer{
     width: 250px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color: #a72573;
-    margin-bottom: 15px;
+    color: #fff;
+    margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
+    margin-top: 10px;
 }
 .pie-pagina .grupo-1 .box p{
-    color: #a72573;
+    color: #fff;
     margin-bottom: 10px;
     font-size: 17px;
     text-align: justify;
@@ -276,8 +283,8 @@ footer{
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #a72573;
-    background-color: #d6d8ff;
+    color: #fff;
+    background-color: #c69cd0;
     text-align: center;
     transition: all 300ms ease;
     font-size: 20px;
@@ -955,7 +962,7 @@ position: relative;
 .Historia
 {
     max-width: 90%;
-    width: 45%;
+    width: 35%;
 }
 .img-text{
     max-width: 40%;
@@ -977,86 +984,23 @@ position: relative;
 {
     width: 40%;
 }
-@media (max-width: 1350px){
+@media(max-width: 1350px){
     .carta{
         max-width: 90%;
     }
 }
-@media (max-width: 868px) {
- 
-  /* --------Carta-------*/
-  .content{
-    width: 90%;
-  }
-  .textos
-  {
-    padding: 0 0.1px;
-    font-size: 15px;
-  }
-  .carta{
-    max-width:90%;
-  }
-  .img-logo{
-    display: none;
-  }
-  .Historia{
-    display: contents;
-  } 
-  .about .title{
-    margin-top: 10px;
-}
-
-}
-@media (max-width: 380px) {
-
-  .textos
-  {
-    padding: 0 0.1px;
-    font-size: 15px;
-  }
-  .carta{
-    max-width:90%;
-  }
-  .img-logo
-  {
-    display: none;  
-  }
-  .Historia{
-    display: contents;
-  }
-  .content
-  {
-        width: 100%;
-        padding: 10px;
-      
-  }
-  .img-log{
-    width: 100%;
-  }
-
-.about .title{
-    margin-top: 10px;
-}
-
-}
-@media (max-width: 550px) {
-
-    .carta{
-        max-width:90%;
-    }
-    .img-logo
-    {
-        display: none;  
+@media(max-width: 700px){
+    .img-logo{
+        display: none;
     }
     .Historia{
-        display: contents;
+        width: 100%;
     }
-    .img-log{
-    width: 100%;
-  }
-  .about .title{
-    margin-top: 10px;
+    .about .title{
+        font-size: 30px;
+    }
 }
+
 
     
 }
@@ -1070,4 +1014,8 @@ position: relative;
 .topping i{
     color: red;
     cursor: pointer;
+}
+
+.swal-footer {
+text-align: center;
 }
