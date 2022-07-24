@@ -134,11 +134,11 @@ if(nombreyapellido == "" || nombreyapellido.length < 1 || nombreyapellido == nul
     swal("¡Error!", "Rellene los campo de ingredientes", "warning");
     return false;
   }
-  /*else if(response.length == 0)
+  else if(response.length == 0)
   {
-    swal("¡Error!", "Válidar el CAPTCHA. Por favor, chequea antes de continuar", "warning");
+    swal("¡Error!", "Validar el CAPTCHA. Por favor, chequea antes de continuar", "warning");
     return false;
-  }*/
+  }
 else{
   if(toppingid=="" && consulta == "" && cante==0) // topping == consulta == cantidad extra == 0
   {
